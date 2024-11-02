@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_200sdp"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    android:minHeight="@dimen/_270sdp"
+    app:cardBackgroundColor="@color/blue"
+    app:cardCornerRadius="@dimen/_7sdp"
+    app:cardElevation="@dimen/_4sdp"
+    app:strokeColor="@color/white"
+    app:strokeWidth="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Background Image -->
+        <ImageView
+            android:id="@+id/courseImage"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_90sdp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/universityLogo"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/courseImage"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/courseTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:lines="2"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/computer_science_for_web_programming"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/courseImage" />
+
+        <TextView
+            android:id="@+id/instituteName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/harvard_university"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/courseTitle" />
+
+        <TextView
+            android:id="@+id/certificationType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:background="@drawable/tag_background"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/_8sdp"
+            android:paddingVertical="@dimen/_4sdp"
+            android:text="@string/professional_certificate"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toTopOf="@+id/addToCart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/instituteName" />
+
+        <TextView
+            android:id="@+id/addToCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cart_background"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:paddingVertical="@dimen/_4sdp"
+            android:text="@string/add_to_cart"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
